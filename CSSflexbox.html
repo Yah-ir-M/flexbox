@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="assignmentflexbox.css" rel="stylesheet" type="text/css">
+<style media="screen">
+*{
+	box-sizing: border-box;}
+.container{
+	width:1020px;
+	margin:10px 0 10px 0 auto;
+	
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	background-color: brown;
+	
+}
+.flex-container > div {
+	background-color: burlywood;
+	color: black;
+	margin: 10px;
+	font-size: 15px;
+	padding: 0 10px 0 10px;
+}
+header{
+	width: 100%;
+	height: 30px;
+	background-color: coral;
+	align-content: center;
+}
+footer{
+	width: 100%;
+	height: 30px;
+	background-color: darksalmon;	
+}
+nav{
+	width: 111%;
+	height: 30px;
+	margin: 10px 0 10px 0;
+	padding-top: 10px;
+	background-color: khaki;
+}	
+div{
+	width: 100%;
+	background-color: goldenrod;
+}
+	@media (max-width: 1019px){
+		.container{width:90%;}
+		
+		.makeMeStack{
+			flex:100%;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>This is my Header flexbox</header>
+<div class="flex-container">
+	<nav>Hello</nav>
+	<div class="MakeMeStack" style="flex-grow: 1">1</div>
+	<div class="MakeMeStack" style="flex-grow: 1">2</div>
+	<div class="MakeMeStack" style="flex-grow: 1">3</div>
+	<div class="MakeMeStack" style="flex-grow: 1">4</div>
+	</div>
+	<footer>This is the Footer of my Flexbox</footer>
+</body>
+</html>
